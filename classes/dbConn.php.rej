@@ -1,0 +1,10 @@
+diff a/classes/dbConn.php b/classes/dbConn.php	(rejected hunks)
+@@ -25,7 +25,7 @@
+ 
+     function connect()
+     {
+-        $settings = self::$settings_local;
++        $settings = $_SERVER['SERVER_NAME'] === "3t_new" ? self::$settings_local : self::$settings;
+         self::$mysqli = new mysqli($settings['host'], $settings['user'], $settings['pass'], $settings['base']);
+         if (self::$mysqli->connect_errno) {
+             die("MySQL connect error: " . self::$mysqli->connect_error);
