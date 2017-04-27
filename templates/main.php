@@ -1,3 +1,5 @@
+<!--hello-->
+
 <?php 
 if ( !users::$user_auth ) pageLoader::redirectTo('login');
 
