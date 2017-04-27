@@ -1,9 +1,12 @@
 </div>
 <div class="debug">
     <a href="#">отправить тех.данные</a><br>
-<?=$commonClass->getMicroTime(true)?><br>
-<!--user_id=--><?//=(isset(users::$user_data['id']) ? users::$user_data['id'] : 'unset')?><!--<br>-->
-<!--order_id=--><?//=users::$order_id?>
+    <?=$commonClass->getMicroTime(true)?><br>
+        <!--user_id=-->
+        <?//=(isset(users::$user_data['id']) ? users::$user_data['id'] : 'unset')?>
+            <!--<br>-->
+            <!--order_id=-->
+            <?//=users::$order_id?>
 </div>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
@@ -28,6 +31,35 @@ tinymce.init({
 });
 </script>
 ":"")?>
-<script type="text/javascript" src="/js/scripts.js"></script>
-</body>
-</html>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function() {
+            var widget_id = 'sLKpxfBeF0';
+            var d = document;
+            var w = window;
+
+            function l() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
+    </body>
+
+    </html>
